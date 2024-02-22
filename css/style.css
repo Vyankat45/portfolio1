@@ -1,0 +1,387 @@
+@import 'utilites.css'; 
+:root{
+    --primary:#3DCFD3;
+    --seconday:#070606
+    --dark: #161616;
+    --pure:#FFFFFF;
+    --termary:#898989;
+    --light:#F2F2F2;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+
+/* navbar css */
+.branding > h1{
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+header{
+    background: black;
+    /* height: 800px; */
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 87%,0 100%);
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+header nav .left a:hover{
+    color: #3DCFD3;
+
+}
+
+header nav{
+    padding: 2rem 0;
+}
+header nav .branding{
+    margin-right: 3rem;
+}
+
+.right a{
+    color: black;
+}
+
+
+/* poster css */
+
+.hero .left img{
+    width: 400px;
+    height: 520px;
+}
+.hero{
+    padding: 3rem 0;
+}
+
+.hero .right {
+    color: white;
+    margin-top: -5rem;
+}
+
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span{
+    color: var(--primary);
+}
+
+.hero .right p{
+    line-height: 1.6;
+    margin-bottom: 2rem;
+
+}
+
+/* about me css */
+
+section{
+    padding: 6rem 0;
+}
+
+.aboutImg{
+    height: 450px;
+    width: 450px;
+}
+
+ section .container h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+h1 span{
+    color: var(--primary);
+}
+
+section .container h3{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+section .container p{
+    font-family: 'Lato',sans-serif;
+    color: var(--termary);
+    line-height: 1.8;
+}
+
+
+/* services css */
+
+.section-haeading{
+    color: var(--seconday);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.card img{
+    height: 90px;
+    width: 90px;
+}
+
+.section-haeading + p {
+    color: var(--termary);
+    font-family: 'Lato',sans-serif;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.section-haeading span{
+    /* color:black; */
+    font-weight: bold;
+}
+
+.section-haeading + span + span{
+    color: black;
+}
+
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:2rem ;
+    grid-row-gap:5rem ;
+    text-align: center;
+
+}
+
+section.services{
+
+    background: var(--light);
+}
+
+section.services .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 4rem;
+    transition: all .3s ease;
+}
+
+section.services .card-wrapper .card:hover,section.services .card-wrapper .card p:hover{
+    background-color: black;
+    color: #FFFFFF;
+    
+}
+
+/* section.services .card-wrapper .card p:hover{
+    color: white;
+    
+} */
+
+section.services .card-wrapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section.services .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.services .card-wrapper .card p{
+    font-family: 'Lato',sans-serif;
+    color: var(--termary);
+
+}
+
+/* freelancer section css */
+
+.freelancer{
+    text-align: center;
+    background:url("/images/camera.png");
+    clip-path: polygon(0 0,100% 0,100% 100%,67% 80%,0 100%);
+    padding-bottom: 10rem;
+
+    
+}
+
+.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+}
+
+.freelancer p{
+    margin-bottom: 2rem;
+    font-family: 'Lato',sans-serif;
+
+    color: var(--pure);
+}
+
+/* project section css */
+
+.project img{
+    height: 100%;
+    width: 100%;
+    /* border-radius: 50%; */
+}
+
+section.project h1{
+    font-size: 2.0rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: bold;
+}
+
+.gallery {
+    background: #EEE;
+  }
+  
+  .gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+    position: relative;
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+  .gallery-cell .overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(61, 207, 211, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: all .3s ease;
+  }
+
+  .gallery-cell .overly a{
+    color: var(--termary);
+    text-decoration: none;
+  }
+
+  .gallery-cell .overly:hover{
+    opacity: 1;
+  }
+
+  /* contact section css */
+
+  .contact{
+    background: var(--light);
+  }
+
+  .contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+  }
+  .contact .card-wrapper .card{
+    text-align: center;
+  }
+  
+  .contact .card-wrapper .card img{
+    margin-bottom: 1rem;
+  }
+  .contact .card-wrapper .card h1{
+    font-weight: bold;
+    
+}
+  .contact .card-wrapper .card h5{
+    font-size: 1rem;
+    color: var(--termary);
+    margin-bottom: 3rem;
+    
+}
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 1rem;
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+
+section.contact input{
+    padding: 0.6rem;
+}
+
+section.contact .input-wrap-2 input{
+    margin-bottom: 1rem;
+}
+section.contact .input-wrap-2 textarea{
+    margin-bottom: 1rem;
+    padding: 0.6rem;
+
+}
+
+.contact .btn-wrapper{
+    text-align: center;
+}
+
+/* footer section css */
+
+footer{
+    background: black;
+    color: var(--pure);
+    text-align: center;
+    padding: 2rem;
+}
+
+footer a{
+    margin-right: 1rem;
+    color: var(--pure);
+    font-size: 1.5rem;
+}
+footer h1{
+    margin-bottom: 1rem;
+}
+
+.footer-social{
+    margin-bottom: 1rem;
+    
+}
